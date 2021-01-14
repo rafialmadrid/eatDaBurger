@@ -3,7 +3,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block}}
+      {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -11,6 +11,9 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
+    <li>
+      {{burger_name}}
+    </li>
     {{/if}}
   {{/each}}
 </ul>
@@ -19,7 +22,7 @@
 
   <div class="form-group">
     <label for="ca">Enter the burger you want:</label>
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ca">
   </div>
 
   <button type="submit">Add Burger</button>
