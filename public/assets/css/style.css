@@ -17,3 +17,30 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+h1 {
+text-align: center;
+padding-top: 20px;
+}
+
+#burgerImg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  text-align: center;
+}
+
+#buttonAdd {
+  text-align: center;
+}
+
+.wrapper {
+text-align: center;
+padding-top: 20px;
+}
+
+.lists {
+  padding-top: 20px;
+}

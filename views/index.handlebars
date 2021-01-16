@@ -1,12 +1,28 @@
 <h1>Eat-Da-Burger!</h1>
 
-<ul>
+<div class="container">
+
+  <div class="row" id="imageRow">
+
+<img src="https://www.pinclipart.com/picdir/big/561-5619984_seyyahh-burger-cartoon-clipart.png" alt="burgerImg" width="250px" height="200px" id="burgerImg">
+
+  </div>
+
+  <div class="row">
+
+          <div class="col-sm-6 lists">
+
+    <ul>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
+
+          </div>
+
+          <div class="col-sm-6 lists">
 
 <ul>
   {{#each burgers}}
@@ -18,6 +34,13 @@
   {{/each}}
 </ul>
 
+          </div>
+
+
+  </div>
+
+  <div class="wrapper">
+
 <form class="create-form">
 
   <div class="form-group">
@@ -25,5 +48,9 @@
     <input type="text" id="ca">
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit" id="buttonAdd">Add Burger</button>
 </form>
+
+  </div>
+
+</div>
