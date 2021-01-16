@@ -1,4 +1,4 @@
-#eat-da-burger! () <-- Link to the deployed app
+#eat-da-burger! (https://guarded-castle-41145.herokuapp.com/) <-- Link to the deployed app
 
 <img src="img/deployedApp.png" alt="Deployed app">
 
